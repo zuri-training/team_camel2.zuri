@@ -2,11 +2,34 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
-const userRoute = require("../routes/userRoute")
+const userRoute = require("./routes/userRoute")
+const mongoose = require("mongoose");
+let DB_CONNECT = process.env.DB_CONNECT;
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+//database
+(async function connection() {
+  try {
+    mongoose.connect(
+      DB_CONNECT,
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      },
+      (error) => {
+        if (error) {
+          throw new Error("Failed to connect to database");
+        }
+        console.log("Successfuly connected to the database");
+      }
+    );
+  } catch (error) {
+    console.log(error);
+  }
+})()
 
 //Routes
 app.get("/user", userRoute);
@@ -26,5 +49,5 @@ app.use((req, res, next) => {
 // Database
 const dbURI = "";
 
-port = process.env.PORT || 5000;
+PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
