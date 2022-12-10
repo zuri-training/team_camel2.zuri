@@ -33,7 +33,7 @@ exports.createUser = async function (req, res) {
       username: user.username,
       email: user.email,
       phoneNumber: user.phoneNumber,
-      password: user.hashedPassword,
+      password: hashedPassword,
     },
     (err, newUser) => {
       if (err) {
@@ -67,5 +67,8 @@ exports.loginUser = async function (req, res) {
   }
 };
 
-//aceess
-exports.permission=(req,res) => {};
+// //access
+// exports.permission = async function (req, res) {
+//   const user = await User.findOne({ email: req.body.email });
+//   if (!user) return res.status(400).json("Email is not found");
+// }
