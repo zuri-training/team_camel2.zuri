@@ -9,7 +9,7 @@ let DB_CONNECT = process.env.DB_CONNECT;
 
 // New line
 const passport = require('passport');
-const cookieSession = require('cookie-session');
+const session = require('express-session')
 require('./utils/passport');
 
 // Middleware
@@ -17,9 +17,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // New Line
-app.use(cookieSession({
-  name: 'google-auth-session',
-  keys: ['key1', 'key2']
+app.use(session({
+  secret: 'somethingsecretgoeshere',
+  resave: false,
+  saveUninitialized: true,
 }));
 app.use(passport.initialize());
 app.use(passport.session());
