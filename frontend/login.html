@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuri Lowfi</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="inner"> </div>
+        <div id="inner-2">
+
+            <div id="flex">
+                <img id="logo" src="./images/logo.jpg" alt="" width="50px" height="50px">
+                <h2 style="width: 80px;">Terms<i>tree</i></h2>
+            </div>
+
+            <h3 style="margin-top: 10px; text-align: center;">Welcome Back</h3>
+            <p style="margin-top: 5px; text-align: center;">Sign in to manage T&C generation</p>
+
+            <form action="" id="login-form">
+                <label for="Email Address">Email Address:</label><br>
+                <input type="email" id="email" required><br>
+
+                <label for="passwords">Passwords:</label><br>
+                <input type="password" id="password" required><br>
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <input type="checkbox" id="chk_bx_policy" name="remember">
+                        <label for="remember"> Remeber me </label><br>
+                    </div>
+
+                    <p>Forgot Password</p>
+                </div>
+
+                <input class="sign-up-btn" onclick="login()" type="submit" value="Sign In">
+
+            </form>
+
+            <p style="text-align: center; margin-top: 20px;">Don't have an account ? <b>Sign Up</b> </p>
+
+            <div
+                style="display: flex; text-align: center; align-items: center; align-self: center; align-content: center; margin-left: 20px; width: 100%; margin-top: 20px;">
+                <hr style="width: 40%; margin-right: 20px;">
+                <h3>OR</h3>
+                <hr style="width: 40%; margin-left: 20px;">
+            </div>
+
+            <button class="sign-up-btn " style="width: 90%; margin-left: 20px; margin-right: 20px;">
+                Sign In with Google
+            </button>
+
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
