@@ -2,31 +2,30 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
-const userRoute = require("./routes/userRoute")
+const userRoute = require("./routes/userRoute");
 const mongoose = require("mongoose");
 let DB_CONNECT = process.env.DB_CONNECT;
 
-
 // New line
-const passport = require('passport');
-const session = require('express-session')
-require('./utils/passport');
+const passport = require("passport");
+require("./utils/passport");
+const session = require("express-session");
+const googleRoute = require("./routes/googleRoute");
 
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // New Line
-app.use(session({
-  secret: 'somethingsecretgoeshere',
-  resave: false,
-  saveUninitialized: true,
-}));
+app.use(
+  session({
+    secret: "somethingsecretgoeshere",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 app.use(passport.initialize());
 app.use(passport.session());
-
-
-
 
 //database
 // (async function connection() {
@@ -54,32 +53,12 @@ app.get("/user", userRoute);
 
 //welcome note
 app.get("/", (req, res) => {
-  res.send("Here you get you get appropriate T &C, you are welcome 🙌 <button><a href='auth'>Sign with Google</a></button>");
+  res.send(
+    "Here you get you get appropriate T &C, you are welcome 🙌"
+  );
 });
 
-// Auth 
-app.get('/auth' , passport.authenticate('google', { scope:
-  [ 'email', 'profile' ]
-}));
-
-// Auth Callback
-app.get( '/auth/callback',
-  passport.authenticate( 'google', {
-      successRedirect: '/auth/callback/success',
-      failureRedirect: '/auth/callback/failure'
-}));
-
-// Success 
-app.get('/auth/callback/success' , (req , res) => {
-  if(!req.user)
-      res.redirect('/auth/callback/failure');
-  res.send("Welcome " + req.user.email);
-});
-
-// failure
-app.get('/auth/callback/failure' , (req , res) => {
-  res.send("Error");
-})
+app.use("/auth", googleRoute);
 
 //404 error
 app.use((req, res, next) => {
@@ -87,7 +66,6 @@ app.use((req, res, next) => {
     message: "Ohh you are lost, go back now!!!!",
   });
 });
-
 
 // Database
 const dbURI = "";
