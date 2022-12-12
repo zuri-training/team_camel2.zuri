@@ -8,7 +8,6 @@ let DB_CONNECT = process.env.DB_CONNECT;
 
 // New line
 const passport = require("passport");
-require("./utils/passport");
 const session = require("express-session");
 const googleRoute = require("./routes/googleRoute");
 
