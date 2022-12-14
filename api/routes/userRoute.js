@@ -9,7 +9,7 @@ router.post("/signup", userController.createUser);
 //login as a user
 router.post("/login", userController.loginUser);
 
-//access to platform as user
-router.post("/", userController.permission)
+// //access to platform as user
+// router.post("/", userController.permission)
 
 module.exports = router;

@@ -2,10 +2,16 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const userRoute = require("./routes/userRoute")
 const mongoose = require("mongoose");
 let DB_CONNECT = process.env.DB_CONNECT;
 
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // Middleware
 app.use(express.json());
@@ -38,7 +44,7 @@ app.use("/user", userRoute);
 
 //welcome note
 app.get("/", (req, res) => {
-  res.send("Here you get you get appropriate T &C, you are welcome 🙌");
+  res.send("Here you get you get appropriate T &C, you are welcome to Termstree 🙌");
 });
 
 
