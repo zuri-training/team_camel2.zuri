@@ -3,6 +3,7 @@ dotenv.config();
 const User = require("../models/userSchema");
 const bcrypt = require("bcryptjs");
 
+
 //register or signup
 exports.createUser = async function (req, res) {
   const emailExist = await User.findOne({ email: req.body.email });
@@ -28,12 +29,9 @@ exports.createUser = async function (req, res) {
   const user = req.body;
   User.create(
     {
-      firstName: user.firstName,
-      lastName: user.lastName,
-      username: user.username,
+      nameOfOrganisation: user.nameOfOrganisation,
       email: user.email,
-      phoneNumber: user.phoneNumber,
-      password: user.hashedPassword,
+      password: hashedPassword,
     },
     (err, newUser) => {
       if (err) {
@@ -67,5 +65,11 @@ exports.loginUser = async function (req, res) {
   }
 };
 
-//aceess
-exports.permission=(req,res) => {};
+//forget password without email
+
+
+// //access
+// exports.permission = async function (req, res) {
+//   const user = await User.findOne({ email: req.body.email });
+//   if (!user) return res.status(400).json("Email is not found");
+// }
