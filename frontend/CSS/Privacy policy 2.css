@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    height: 2792px;
+    width: 35%;
+    background-color: #6c63ff;
+    float: left;
+}
+.second{
+    height: 2792px;
+    width: 65%;
+    background-color: #ffffff;
+    float: right;
+}

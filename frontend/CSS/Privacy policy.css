@@ -1,58 +1,63 @@
-.sidebar1 {
-    background: #6c63ff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+}.first{
+    width: 35%;
+    height: 800px;
+    background-color: #6c63ff;
+    float: left;
 }
-.sidebar1 .logo img{
+.second{
+    width: 65%;
+    height: 755px;
+    background-color: #ffffff;
+    float: right;
+}
+.first .logo img{
     display: block;
     width: 300px;
     height: 65px;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 10%;
 }
-.sidebar1 .ilstrn img {
+.first .ilstrn img {
     display: block;
     width: 300px;
     height: 270px;
     margin: 0 auto;
-    margin-top: 50%;
+    margin-top: 30%;
 }
-.main {
+.second .title{
    margin-top: 45px;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
    color: #2f2e41;
    text-align: center;
 }
-.main .subtl{
-    position: relative;
-    left: 15.5%;
+.second .subtl{
+    margin-top: 15px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2f2e41;
     font-size: 18px;
     font-weight: 500;
 }
-.main .title{
+.second .title{
     font-size: 28px;
     font-weight: bold;
-    position: relative;
-    left: 15.5%;
 }
-.form{
-    position: relative;
-    left: 40%;
+.second .form{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #2f2e41;
+    position: relative;
+    left: 13%;
 }
-.form #answer{
+.second .form #answer{
     width: 650px;
     height: 35px;
-    position: relative;
-    left: 0%;
 }
-.form .cntn{
+.second .form .cntn{
     background-color: #ffd05b;
     border-radius: 5px;
     border: none;
@@ -61,9 +66,9 @@
     padding: 5px 10px 5px 10px;
     font-size: 16px;
     font-weight: 600;
-    position: relative;
-    left: 42%;
     cursor: pointer;
+    position: relative;
+    left: 63%;
 }
 .cntn:hover{
     background-color: #ebbf50;
