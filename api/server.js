@@ -32,25 +32,25 @@ app.use(passport.session());
 
 
 //database
-// (async function connection() {
-//   try {
-//     mongoose.connect(
-//       DB_CONNECT,
-//       {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true,
-//       },
-//       (error) => {
-//         if (error) {
-//           throw new Error("Failed to connect to database");
-//         }
-//         console.log("Successfuly connected to the database");
-//       }
-//     );
-//   } catch (error) {
-//     console.log(error);
-//   }
-// })()
+(async function connection() {
+  try {
+    mongoose.connect(
+      DB_CONNECT,
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      },
+      (error) => {
+        if (error) {
+          throw new Error("Failed to connect to database");
+        }
+        console.log("Successfuly connected to the database");
+      }
+    );
+  } catch (error) {
+    console.log(error);
+  }
+})()
 
 //Routes
 app.use("/user", userRoute);
