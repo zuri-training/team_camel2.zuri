@@ -7,6 +7,10 @@ const userRoute = require("./routes/userRoute")
 const mongoose = require("mongoose");
 let DB_CONNECT = process.env.DB_CONNECT;
 
+const passport = require("passport");
+const session = require("express-session");
+const googleRoute = require("./routes/googleRoute");
+
 app.use(
   cors({
     origin: "*",
@@ -16,6 +20,15 @@ app.use(
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(
+  session({
+    secret: "somethingsecretgoeshere",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 //database
@@ -41,6 +54,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //Routes
 app.use("/user", userRoute);
+app.use("/auth", googleRoute);
 
 //welcome note
 app.get("/", (req, res) => {
