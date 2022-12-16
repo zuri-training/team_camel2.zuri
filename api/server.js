@@ -9,7 +9,7 @@ let DB_CONNECT = process.env.DB_CONNECT;
 
 const passport = require("passport");
 const session = require("express-session");
-const googleRoute = require("./routes/googleRoute");
+// const googleRoute = require("./routes/googleRoute");
 
 app.use(
   cors({
@@ -54,7 +54,7 @@ app.use(passport.session());
 
 //Routes
 app.use("/user", userRoute);
-app.use("/auth", googleRoute);
+// app.use("/auth", googleRoute);
 
 //welcome note
 app.get("/", (req, res) => {
