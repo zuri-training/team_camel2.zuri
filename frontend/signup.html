@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="javascript" href="./JS/script.js">
+</head>
+
+<body>
+    <div id="container">
+        <div id="inner"style="height: 100vh;"> 
+
+        </div>
+        <div id="inner-2">
+            <div id="flex">
+                <img id="logo" src="./images/Termstree Logo.png" alt="Termstree Logo" width="300px" height="50%">
+                <h2 style="font-size: 70px; font-weight: 500;">Terms<i>tree</i></h2>
+            </div>
+
+            <h3 style="margin-top: 5px; font-size: 30px; text-align: center; color: #6c63ff">Create your Termtree Account</h3>
+            <p style="margin-top: 5px; text-align: center;">Sign up now and proceed to terms generation</p>
+
+            <form name="register" action="http://localhost:3000/user/login.html" id="signup-form" onsubmit="return validateForm()" method="post">
+                <label for="username">Name of Organisation:</label><br>
+                <input type="name" id="name" required><br>
+                <label for="Email Address">Email:</label><br>
+                <input type="email" id="email" name="emailAddress" ><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" pattern = "/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+=-\?;,./{}|\" required><br>
+                <input type="checkbox" id="chk_bx_policy" name="policy" required>
+                <label for="policy"> I agree to the terms of services and private policy </label><br>
+                <input class="sign-up" type="submit" value="Sign Up">  
+            </form>
+            
+            <p style="text-align: center; margin-top: 20px;">Already have an account ? <b><a href="./login.html">Sign in</a></b></p>
+
+            <div
+                style="display: flex; text-align: center; align-items: center; align-self: center; align-content: center; margin-left: 20px; width: 100%; margin-top: 20px;">
+                <hr style="width: 30%; margin: top 20px; margin: 0 auto; margin-right: 20px;">
+                <h3>OR</h3>
+                <hr style="width: 30%; margin: top 20px; margin: 0 auto; margin-left: 20px;">
+            </div>
+
+            <button class="google" style="width: 80%; margin: 0 auto; margin-left: 85px;">
+                Sign Up with Google
+            </button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
