@@ -65,11 +65,30 @@ exports.loginUser = async function (req, res) {
   }
 };
 
-//forget password without email
-
-
-// //access
-// exports.permission = async function (req, res) {
-//   const user = await User.findOne({ email: req.body.email });
-//   if (!user) return res.status(400).json("Email is not found");
-// }
+//forget password 
+exports.forgetPassword = async function(req, res) {
+  const user = User.findOne({ email : req.email.email }) 
+  if(!user) 
+  {
+   return res.status(400).json("User is not valid");
+  } else 
+  
+    if(req.body.newPassword !== req.body.confirm) 
+    {
+     return res.status(400).json("Password confirmation not the same");
+    } 
+    try {
+     const salt = await bcrypt.genSalt(10);
+     const hashedPassword = await bcrypt.hash(req.body.password, salt);
+     const updatePassword = await User.findByIdAndUpdate({_id : user.id}, {
+       $set : {password : hashedPassword}
+     }, {new : true}) 
+     if(!updatePassword) 
+     {
+       throw new Error("Sorry something went wrong")
+     } 
+    return res.status(200).json({msg : "Password have been updated"})
+    } catch (error) {
+      if(error) return res.status(500).json({ msg : error.message})
+    }     
+} 
