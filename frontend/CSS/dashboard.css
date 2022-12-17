@@ -55,6 +55,9 @@
     left: 6%;
     color: #ffd05b;
 }
+.sidenav a#lgt:hover{
+    color: #ebbf50;
+}
 .sidenav #logt{
     width: 20px;
     height: 60px;
