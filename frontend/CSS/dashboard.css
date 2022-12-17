@@ -21,6 +21,8 @@
     height: 35px;
     margin: 0 25px;
     margin-top: 7%;
+    position: relative;
+    right: 25px;
 }
 .sidenav a{
     padding: 4px 4px 4px 25px;
@@ -30,6 +32,9 @@
     font-weight: 400;
     color: white;
     display: block;
+}
+.sidenav a:hover{
+    color: #ffd05b;
 }
 .sidenav .btn{
     background-color: #ffd05b;
@@ -46,6 +51,14 @@
 }
 .sidenav a#lgt{
     position: relative;
-    top: 25%;
+    top: 10%;
+    left: 6%;
     color: #ffd05b;
+}
+.sidenav #logt{
+    width: 20px;
+    height: 60px;
+    position: relative;
+    right: 10px;
+    top: 111px;
 }
