@@ -26,12 +26,19 @@
     font-weight: 500;
 }
 #main img{
-    height: 110px;
+    height: 100px;
     width: 55%;
 }
 #links img{
-    height: 30px;
+    height: 23px;
     width: 100px;
     position: relative;
     right: 103%;
+}
+#main img#cncl {
+    height: 45px;
+    width: 60px;
+    position: relative;
+    left: 35%;
+    bottom: 110px;
 }
