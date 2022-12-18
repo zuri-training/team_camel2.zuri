@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/dashboard.css">
-    <script src="https://kit.fontawesome.com/2e765c42ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Termstree</title>
 </head>
 <body>
     <div class="sidenav">
         <a href="index.html"><img src="images/Termstree Logo.png" alt="Termstree logo"></a>
-        <i class="fa-solid fa-circle-chevron-left" style="font-size: 30px;color:#ffd05b;fill: #000000; position: relative;left: 90%;top: 1%;"></i>
-        <br><br><br>
+        <br><br><br><br>
         <button class="btn" >Dashboard</button>
         <br><br>
         <a href="T&Cs.html"> T&Cs </a><br>
@@ -26,9 +25,16 @@
         <img id="logt" src="images/icon _logout_.svg">
         <a id="lgt" href="Sign in.html"> Logout </a>
     </div>
-
+    <div id="bck"> <img src="images/back.svg" alt="back" style="height: 40px;width: 40px;"></div>
     <div class="main">
-        <p>Dashboard</p>
+        <p id="dsh">Dashboard</p>
+        <div class="form">
+            <form action="search"> 
+                <input type="text" id="search" placeholder="           Search here...">
+                <button type="submit"> <a href="Search.html"></a> <i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <img id="user" src="images/Ellipse 106.svg" alt="User">
     </div>
     
 </body>
