@@ -3,7 +3,7 @@
     padding: 0;
 }
 .sidenav{
-    height: 94vh;
+    height: 1048px;
     width: 250px;
     float: left;
     margin-top: 10px;
@@ -13,26 +13,35 @@
     padding-top: 20px;
     border-radius: 0px 70px 70px 0px; overflow: hidden;
 }
-.sidenav img{
+.sidenav img#logo{
     display: block;
     width: 160px;
-    height: 35px;
-    margin: 0 25px;
-    margin-top: 7%;
+    height: 40px;
     position: relative;
-    right: 25px;
+    top: 26px;
+    margin: 0px -27px;
 }
 .sidenav a{
     padding: 4px 4px 4px 25px;
+    bottom: 0px;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: white;
     display: block;
+    position: relative;
+    left: 7%;
 }
 .sidenav a:hover{
     color: #ffd05b;
+}
+.sidenav img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3%;
+    left: 5%;
 }
 .sidenav .btn{
     background-color: #ffd05b;
@@ -49,7 +58,7 @@
 }
 .sidenav a#lgt{
     position: relative;
-    top: 10%;
+    top: 430px;
     left: 6%;
     color: #ffd05b;
 }
@@ -58,10 +67,9 @@
 }
 .sidenav #logt{
     width: 20px;
-    height: 60px;
+    height: 20px;
     position: relative;
-    right: 10px;
-    top: 111px;
+    top: 460px;
 }
 #bck {
     position: relative;
@@ -76,7 +84,7 @@
     font-weight: 500;
     font-size: 24px;
     position: relative;
-    left: 7%;
+    left: 5%;
     top: 10px;
 }
 .main .form #search{
@@ -101,4 +109,148 @@
     position: relative;
     left: 91%;
     bottom: 73px;
+}
+.main p#wlcm{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    left: 5%;
+    bottom: 65px;
+}
+.main p#tc{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: 5%;
+    bottom: 80px;
+}
+.main .card1{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    left: 6%;
+    bottom: 60px;
+}
+.main .card1 img#add{
+    position: relative;
+    top: 40%;
+    left: 37%;
+}
+.main .card1 img{
+    position: relative;
+    top: 75%;
+    left: 18%;
+}
+.main .card1 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 67%;
+    left: 42%;
+}
+.main .card2{
+    width: 250px;
+    height: 280px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    left: 33%;
+    bottom: 360px;
+    padding: 10px;
+}
+.main .card2 .txt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #1c1c1c;
+    text-align: center;
+}
+.main .card2 .prv{
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 270px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    top: 0.9%;
+    right: 4%;
+}
+.main .card2 .prv p{
+    position: relative;
+    top: 10px;
+}
+.main p#pp{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: 5%;
+    bottom: 300px;
+}
+.main .card3{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    left: 6%;
+    bottom: 280px;
+}
+.main .card3 img#add{
+    position: relative;
+    top: 40%;
+    left: 37%;
+}
+.main .card3 img{
+    position: relative;
+    top: 75%;
+    left: 18%;
+}
+.main .card3 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 67%;
+    left: 42%;
+}
+.main .card4{
+    width: 250px;
+    height: 280px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    left: 33%;
+    bottom: 580px;
+    padding: 10px;
+}
+.main .card4 .txt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #1c1c1c;
+    text-align: center;
+}
+.main .card4 .prv{
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 270px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    top: 0.9%;
+    right: 4%;
+}
+.main .card4 .prv p{
+    position: relative;
+    top: 10px;
 }
