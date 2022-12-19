@@ -43,6 +43,8 @@ To deploy this project run
   npm start
 ```
 
+### Final Deployment 
+- [Production](https://team-camel2-zuri.vercel.app/)
 
 ### Acknowledgements
 
@@ -53,17 +55,21 @@ To deploy this project run
 
 ### Authors
 
-#### Team Camel2
+#### Members of Team Camel2
 
+- [Olúbùsọ́lá Odunuga](https://github.com/olubusolami)
+- [Ekezie Victor](https://github.com/Ekezie-Victor)
 - [Blessing Udeji](https://github.com/blessingudeji)
 - [Daniel Chukwudi Ochei](https://www.behance.net/danielochei1)
 - [Elozino Ovedhe](https://github.com/Elozino)
-- [Olúbùsọ́lá Odunuga](https://github.com/olubusolami)
 - [Ironsi Emmanuella](https://www.behance.net/emmanueironsi )
 - [Denelsen Takudzwa Dandi](https://www.behance.net/de_Nelsen_zw)
 - [Chioma Asadu](https://www.behance.net/chiomaasadu)
-- [Ekezie Victor](https://github.com/Ekezie-Victor)
 - [Zakariyya Muhsinah Moromoke](https://github.com/MUHZAK1)
 - [Ogungbuyi Kayode]()
 - [Ifeanyi ogama]()
 - [Beatrice Gachigi Mwangi]()
+- [Ojo Titilope]()
+- [Ogungbuyi Kayode]()
+- [Akachukwu Anifowose]()
+- [Kelechi Okoroafor]()
