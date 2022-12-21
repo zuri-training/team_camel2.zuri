@@ -6,10 +6,8 @@ const cors = require("cors");
 const userRoute = require("./routes/userRoute")
 const mongoose = require("mongoose");
 let DB_CONNECT = process.env.DB_CONNECT;
-
-const passport = require("passport");
 const session = require("express-session");
-// const googleRoute = require("./routes/googleRoute");
+
 
 app.use(
   cors({
@@ -27,8 +25,7 @@ app.use(
     saveUninitialized: true,
   })
 );
-app.use(passport.initialize());
-app.use(passport.session());
+
 
 
 //database
@@ -54,7 +51,6 @@ app.use(passport.session());
 
 //Routes
 app.use("/user", userRoute);
-// app.use("/auth", googleRoute);
 
 //welcome note
 app.get("/", (req, res) => {
