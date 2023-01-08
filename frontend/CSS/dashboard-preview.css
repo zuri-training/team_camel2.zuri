@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.sidenav{
+    height: 94vh;
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #6c63ff;
+    padding-top: 20px;
+    border-radius: 0px 70px 70px 0px; overflow: hidden;
+}
+.sidenav img#logo{
+    display: block;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    top: 26px;
+    margin: 0px -27px;
+}
+.sidenav a{
+    padding: 4px 4px 4px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    display: block;
+    position: relative;
+    left: 7%;
+    bottom: 1.7%;;
+}
+.sidenav a:hover{
+    color: #ffd05b;
+
+}
+.sidenav img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -15px;
+    left: 5%;
+}
+.sidenav .btn{
+    background-color: #ffd05b;
+    border-radius: 5px;
+    border: none;
+    min-height: 45px;
+    min-width: 225px;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    left: 5%;
+}
+.sidenav a#lgt{
+    position: relative;
+    top: 17%;
+    left: 6%;
+    color: #ffd05b;
+}
+.sidenav a#lgt:hover{
+    color: #ebbf50;
+}
+.sidenav #logt{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 160px;
+}
+#bck {
+    position: relative;
+    right: 2%;
+    top: 85px;
+}
+.main {
+    margin-left: 250px;
+}
+.main p#dsh{
+    font-weight: 500;
+    font-size: 29px;
+    position: relative;
+    left: 5%;
+    top: 15px;
+}
+.main .form #search{
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    left: 60%;
+    bottom: 23px;
+    cursor: pointer;
+}
+
+
+.main .form button{
+    background: white;
+    border: none;
+    position: relative;
+    left: 31%;
+    right: 70%;
+    bottom: 23px;
+    cursor: pointer;
+}
+input {
+    font-style:italic;
+    font-weight: 150;
+}
+.main img#user{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 91%;
+    bottom: 73px;
+}
+.main p#wlcm{ 
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    left: 5%;
+    bottom: 30px;
+}
+#pc{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 90px;
+    padding-bottom: 50px;
+}
+
+ .text{
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+    border: 1px solid black;
+    position: relative;
+    background: white;
+    margin-left: 120px;
+    bottom: 20px;
+}
+
+.text h1{
+font-size: 32px;
+padding-top: 10px;
+padding-bottom: 25px;
+font-weight: 550;
+}
+
+.text #edit{
+    font-weight: 50;
+    font-size:large;
+    justify-content: left;
+    color: rgb(71, 68, 68);
+    
+
+}
+.text #edit strong{
+    color: black;
+}
+
+
+
+.buttons {
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: white;
+border-radius: 5px;
+border: none;
+min-height: 35px;
+min-width: 20px;
+padding: 10px 10px 5px 10px;
+font-size: 16px;
+font-weight: 200;
+cursor: pointer;
+padding-bottom: 20px;
+padding-left: 350px;
+margin-left: 150px;
+bottom: 20px;
+}
+
+.buttons img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: -2px;
+    left: -6%;
+
+    
+}
+
+
+#edit-button{
+    width: 100px;
+    padding: 5px;
+    margin: 0 3px;
+    background-color:white;
+    outline: none;
+    border: 1px solid black;
+    border-radius:5px;
+    padding-right: 20px;
+    margin-right: 10px;
+    font-size: medium;
+    
+    
+    }
+    
+    #edit-button:hover{
+        transform:scale(1.1);
+    }
+
+#save-button{
+    width: 100px;
+    padding: 5px;
+    margin: 0 3px;
+    background-color:#ffd05b;
+    outline: none;
+    border: 1px solid #ffd05b;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: medium;  
+}
+
+#save-button:hover{
+    transform:scale(1.1);
+
+}
+
+
+  .dropdown button{
+    display: inline;
+    width: 30px;
+    padding: 7px;
+    margin: 0 3px;
+    background-color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: -5px ;
+    box-shadow: 3px 3px 5px rgb(186, 181, 181);
+
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+ 
+  .dropdown:hover .dropdown-content{
+   display:block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #6c63ff;
+  }
+  
